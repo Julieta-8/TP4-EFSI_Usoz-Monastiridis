@@ -1,14 +1,15 @@
-const Cita = ({Mascota, Dueño, Fecha, Hora, Sintomas}) => {
+const Cita = ({ Mascota, Dueño, Fecha, Hora, Sintomas }) => {
   return (
-    <ul>
-      <li>Mascota: {Mascota}</li>
-      <li>Dueño: {Dueño}</li>
-      <li>Fecha: {Fecha}</li>
-      <li>Hora: {Hora}</li>
-      <li>Sintomas: {Sintomas}</li>
+    <div className="cita">
+      <p><strong>Mascota:</strong> {Mascota}</p>
+      <p><strong>Dueño:</strong> {Dueño}</p>
+      <p><strong>Fecha:</strong> {Fecha}</p>
+      <p><strong>Hora:</strong> {Hora}</p>
+      <p><strong>Síntomas:</strong> {Sintomas}</p>
+
       <button>Eliminar ×</button>
-    </ul>
+    </div>
   );
-}
+};
 
 export default Cita;

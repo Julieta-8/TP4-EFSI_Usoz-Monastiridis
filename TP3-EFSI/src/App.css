@@ -182,3 +182,26 @@
     border-right-color: var(--border);
   }
 }
+/*-------------------------------------------------------------------------------*/
+
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+
+}
+.layour div{ 
+  
+  background-color: aliceblue;
+  border: solid 1px 1px 1px black;
+}
+body {
+  background: linear-gradient(to right, rgb(255, 0, 140), rgb(183, 0, 255));
+}
+h1{
+  color: azure;
+}

@@ -1,23 +1,45 @@
-import Cita from "./Cita";//Va a buscar la carpeta que se llame index
+import Cita from "../Cita";
 
-const Listado = ({Mascota, Dueño, Fecha, Hora, Sintomas} ) =>{
-    const Mascotas = ['Uma', 'Gris', 'Mawa']
-    const Dueños = ['Brisa', 'Juli', 'Flor']
-    const Fechas = ['2010-12-26', '2008-11-08', '2009-06-16']
-    const Horas = ['12:26', '08:11', '06:16']
-    const Sintomass = ['Se le está cayendo el pelo', 'Estornuda mucho', 'Le duele la pansa']
+const Listado = () => {
 
-    return (
+  const citas = [
+    {
+      Mascota: 'Uma',
+      Dueño: 'Brisa',
+      Fecha: '2010-12-26',
+      Hora: '12:26',
+      Sintomas: 'Se le está cayendo el pelo'
+    },
+    {
+      Mascota: 'Gris',
+      Dueño: 'Juli',
+      Fecha: '2008-11-08',
+      Hora: '08:11',
+      Sintomas: 'Estornuda mucho'
+    },
+    {
+      Mascota: 'Mawa',
+      Dueño: 'Flor',
+      Fecha: '2009-06-16',
+      Hora: '06:16',
+      Sintomas: 'Le duele la panza'
+    }
+  ];
 
-        <ul>
-            {Mascotas.map(n=><Cita Mascota={n}/>)}
-             {Dueños.map(n=><Cita Dueño={n}/>)}
-              {Fechas.map(n=><Cita Fecha={n}/>)}
-               {Horas.map(n=><Cita Hora={n}/>)}
-                {Sintomass.map(n=><Cita Sintomas={n}/>)}
-
-    </ul>
-    )
-}
+  return (
+    <div>
+      {citas.map((cita, index) => (
+        <Cita
+          key={index}
+          Mascota={cita.Mascota}
+          Dueño={cita.Dueño}
+          Fecha={cita.Fecha}
+          Hora={cita.Hora}
+          Sintomas={cita.Sintomas}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default Listado;

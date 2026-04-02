@@ -11,27 +11,19 @@ function App() {
   return (
     <>
       <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
+      
         <div>
           <h1>Administrador de Pacientes</h1>
           
         </div>
-       <section>
+       <section class = "layout">
         <div>
           <h1>CREAR MI CITA</h1>
           <Formulario></Formulario>
         </div>
         <div>
           <h1>ADMINSITRA TUS CITAS</h1>
-                    <Listado Dueños ={Dueño}/>
-                    <Listado Mascotas ={Mascota}/>
-                    <Listado  Fechas={Fecha}/>
-                    <Listado Horas ={Hora}/>
-                    <Listado Sintomass ={Sintomas}/>
+                  <Listado />
 
         </div>
        </section>
