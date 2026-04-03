@@ -194,14 +194,23 @@
 
 
 }
-.layour div{ 
-  
-  background-color: aliceblue;
-  border: solid 1px 1px 1px black;
-}
+
 body {
   background: linear-gradient(to right, rgb(255, 0, 140), rgb(183, 0, 255));
 }
 h1{
-  color: azure;
+ color: white;
+    padding: 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+      
+    letter-spacing: 1px;
+}
+h2{
+color: white;
+    padding: 3rem 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
 }

@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Listado from './Listado'
 import Formulario from './Formulario'
+import "./Formulario/Formulario.css";
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,16 +14,16 @@ function App() {
       <section id="center">
       
         <div>
-          <h1>Administrador de Pacientes</h1>
+          <h1>ADMINISTRADOR DE PACIENTES</h1>
           
         </div>
        <section class = "layout">
         <div>
-          <h1>CREAR MI CITA</h1>
+          <h2>CREAR MI CITA</h2>
           <Formulario></Formulario>
         </div>
         <div>
-          <h1>ADMINSITRA TUS CITAS</h1>
+          <h2>ADMINSITRA TUS CITAS</h2>
                   <Listado />
 
         </div>

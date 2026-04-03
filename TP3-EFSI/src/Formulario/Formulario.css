@@ -1,0 +1,64 @@
+h3{
+    color: white;
+    font-size: small;
+}
+input{
+    border-radius: 20px, 20px 20px 20px;
+    padding-right: 10%;
+}
+button{
+    color: white;
+   background-color: rgb(11, 178, 255); 
+}
+h3 {
+  text-align: left;
+}
+
+element.style {
+}
+input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+}
+input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], select, textarea {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+fieldset, input, select, textarea {
+    margin-bottom: 1.5rem;
+}
+button, input {
+    overflow: visible;
+    padding-right: 50%;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+user agent stylesheet
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+user agent stylesheet
+input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+form{
+    
+      text-align: left;
+}

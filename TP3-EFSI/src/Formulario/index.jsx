@@ -11,6 +11,7 @@ return(
 <input type="hour" name="Hora"/>
 <h3>Sintomas</h3>
 <textarea name="Sintomas" id=""></textarea>
+<button>agregar cita</button>
 </form>
 );
 
