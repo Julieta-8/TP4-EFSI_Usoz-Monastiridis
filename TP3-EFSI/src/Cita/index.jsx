@@ -7,7 +7,7 @@ const Cita = ({ Mascota, Dueño, Fecha, Hora, Sintomas }) => {
       <p><strong>Hora:</strong> {Hora}</p>
       <p><strong>Síntomas:</strong> {Sintomas}</p>
 
-      <button>Eliminar ×</button>
+      <button class="boton">ELIMINAR ×</button>
     </div>
   );
 };

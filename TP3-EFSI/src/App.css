@@ -191,7 +191,8 @@
   grid-template-rows: 1fr;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-
+margin-left: 40%;
+margin-right: 40%;
 
 }
 
@@ -203,7 +204,7 @@ h1{
     padding: 3rem 0;
     text-align: center;
     text-transform: uppercase;
-      
+    
     letter-spacing: 1px;
 }
 h2{
