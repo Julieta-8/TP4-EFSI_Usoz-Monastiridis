@@ -3,6 +3,7 @@
     border-radius: 20px;
 padding-left: 5%;
 margin-bottom: 5%;
+padding-top: 2%;
 }
 p{
     color: black;
@@ -22,7 +23,7 @@ p {
     padding-left: 40%;
     padding-right: 40%;
   margin-bottom: 3%;
-  border: 5px 5px 5px grey;
+  border: 1px solid grey;
      margin-left: 0%;
    
 }
