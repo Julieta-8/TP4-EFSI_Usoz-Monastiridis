@@ -6,9 +6,9 @@ return(
 <h3>Nombre del Dueño</h3>
 <input type="text" name="Dueño" placeholder="Nombre del dueño" />
 <h3>Fecha</h3>
-<input type="date" name="Fecha"  class="hora"/>
+<input type="date" name="Fecha"  className="hora"/>
 <h3>Hora</h3>
-<input type="hour" name="Hora"/>
+<input type="time" name="Hora"/>
 <h3>Sintomas</h3>
 <textarea name="Sintomas" id=""></textarea>
 <button>agregar cita</button>

@@ -7,8 +7,12 @@ import Listado from './Listado'
 import Formulario from './Formulario'
 import "./Formulario/Formulario.css";
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [cita] = useState({
+    paciente: "Juan",
+    doctor: "Dr. Pérez",
+    fecha: "10/10/2026",
+  });
+  
   return (
     <>
       <section id="center">
@@ -17,13 +21,13 @@ function App() {
           <h1>ADMINISTRADOR DE PACIENTES</h1>
           
         </div>
-       <section class = "layout">
+       <section className = "layout">
         <div>
           <h2>CREAR MI CITA</h2>
           <Formulario></Formulario>
         </div>
         <div>
-          <h2>ADMINSITRA TUS CITAS</h2>
+          <h2>ADMINISITRA TUS CITAS</h2>
                   <Listado />
 
         </div>
