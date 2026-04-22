@@ -1,50 +1,57 @@
-h3{
-    color: white;
-    font-size: small;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-input{
-    border-radius: 20px, 20px 20px 20px;
-    padding-right: 10%;
-}
-button{
-    color: white;
-    padding-right: 12%;
-   background-color: rgb(11, 178, 255); 
-}
-h3 {
-     margin-left: 10%;
+
+
+form h3 {
   text-align: left;
+ font-size: 13px;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ text-transform: uppercase;
+ color: #ffffff;           /* labels en fucsia como en la imagen */
+ margin: 0;
+
+
 }
 
 
-form{
-    margin-left: 10%;
-      text-align: left;
+form input,
+form textarea {
+padding: 12px;
+ border-radius: 5px;
+ border: 1.5px solid #e0e0e0;
+ background-color: #ffffff;  /* blanco en vez de gris para que matchee */
+ font-size: 14px;
+ color: #333;
+ transition: border-color 0.2s;
+
+
 }
-button{
-       box-decoration-break: none;
-        border-radius: 5px;
-        padding: 2%;
-        margin-left: 10%;
-        padding-left: 35%;
-        padding-right: 35%;
+
+
+form textarea {
+  height: 90px;
+  resize: none;
 }
-input{
-    border-radius: 5px;
-    padding: 2%;
-    padding-right: 50%;
-    margin-left: 10%;
+
+
+form button {
+ margin-top: 10px;
+ padding: 14px;
+ background: #4fc3dc;
+ border: none;
+ color: white;
+ font-weight: bold;
+ border-radius: 5px;
+ text-transform: uppercase;
+ cursor: pointer;
+ letter-spacing: 0.08em;
+ transition: background 0.2s;
 }
-input, button {
-  border: none;
-  outline: none;
-}
-textarea{
-    padding: 2%;
-    margin-left: 10%;
-    padding-right: 50%;
-    border-radius: 5px;
-}
-.hora{
-    padding-left: 13%;
+ 
+form button:hover {
+ background: #3aaac0;
 }

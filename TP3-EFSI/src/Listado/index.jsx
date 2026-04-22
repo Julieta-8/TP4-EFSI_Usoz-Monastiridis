@@ -25,7 +25,11 @@ const Listado = () => {
       Sintomas: 'Le duele la panza'
     }
   ];
-
+/*for(let i = 0; i <citas.length; i++){
+  if(count == 1){
+    citas[i].clear();
+  }
+}*/
   return (
     <div>
       {citas.map((cita, index) => (

@@ -7,11 +7,8 @@ import Listado from './Listado'
 import Formulario from './Formulario'
 import "./Formulario/Formulario.css";
 function App() {
-  const [cita] = useState({
-    paciente: "Juan",
-    doctor: "Dr. Pérez",
-    fecha: "10/10/2026",
-  });
+ 
+
   
   return (
     <>
@@ -28,7 +25,7 @@ function App() {
         </div>
         <div>
           <h2>ADMINISITRA TUS CITAS</h2>
-                  <Listado />
+                 <Listado> </Listado >
 
         </div>
        </section>
