@@ -1,8 +1,16 @@
 import Cita from "../Cita";
+import { useState } from 'react'
 import  "../Cita/Cita.css"
 const Listado = () => {
+ [citas, setCita] = useState({
+   Mascota: 'Uma',
+      Dueño: 'Brisa',
+      Fecha: '2010-12-26',
+      Hora: '12:26',
+      Sintomas: 'Se le está cayendo el pelo'
 
-  const citas = [
+})
+  /*const citas = [
     {
       Mascota: 'Uma',
       Dueño: 'Brisa',
@@ -24,12 +32,8 @@ const Listado = () => {
       Hora: '06:16',
       Sintomas: 'Le duele la panza'
     }
-  ];
-/*for(let i = 0; i <citas.length; i++){
-  if(count == 1){
-    citas[i].clear();
-  }
-}*/
+  ];*/
+
   return (
     <div>
       {citas.map((cita, index) => (

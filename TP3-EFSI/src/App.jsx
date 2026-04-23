@@ -7,8 +7,8 @@ import Listado from './Listado'
 import Formulario from './Formulario'
 import "./Formulario/Formulario.css";
 function App() {
- 
-
+ const [citas, setCitas] = useState([]);
+//Citas e sla variable, setCitas es la funcion que hiría en el fromulario
   
   return (
     <>
@@ -21,11 +21,11 @@ function App() {
        <section className = "layout">
         <div>
           <h2>CREAR MI CITA</h2>
-          <Formulario></Formulario>
+          <Formulario setCitas ={setCitas}></Formulario>
         </div>
         <div>
           <h2>ADMINISITRA TUS CITAS</h2>
-                 <Listado> </Listado >
+                 <Listado citas = {citas} setCitas ={setCitas}> </Listado >
 
         </div>
        </section>

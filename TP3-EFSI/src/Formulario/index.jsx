@@ -1,6 +1,26 @@
+
+import {useSate} from "react"
 const Formulario =() =>{
+
+    const setCita = (e) =>{
+        e.preventDefault();
+         const formulario = e.target;
+        
+        formulario.Mascota.value = "";
+
+        setCita([
+            ...citas,
+            formulario.Mascota.value,
+             formulario.Dueño.value,
+              formulario.Fecha.value.
+             formulario.Hora.value,
+             formulario.Sintomas.value,
+        ]);
+
+    }
+
 return(
-<form method="post"action="">
+<form onSubmit= {setCita}>
 <h3>Nombre Mascota</h3>
 <input type="text" name="Mascota" placeholder="Nombre Mascota" />
 <h3>Nombre del Dueño</h3>
