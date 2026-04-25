@@ -9,7 +9,10 @@ import "./Formulario/Formulario.css";
 function App() {
  const [citas, setCitas] = useState([]);
 //Citas e sla variable, setCitas es la funcion que hiría en el fromulario
-  
+  const eliminarCita = (indexAEliminar) => {
+  const nuevasCitas = citas.filter((_, index) => index !== indexAEliminar);
+  setCitas(nuevasCitas);
+};
   return (
     <>
       <section id="center">
@@ -21,12 +24,10 @@ function App() {
        <section className = "layout">
         <div>
           <h2>CREAR MI CITA</h2>
-          <Formulario setCitas ={setCitas}></Formulario>
-        </div>
+<Formulario citas={citas} setCitas={setCitas} />        </div>
         <div>
           <h2>ADMINISITRA TUS CITAS</h2>
-                 <Listado citas = {citas} setCitas ={setCitas}> </Listado >
-
+<Listado citas={citas} setCitas={setCitas} eliminarCita={eliminarCita} />
         </div>
        </section>
       </section>

@@ -1,15 +1,8 @@
 import Cita from "../Cita";
-import { useState } from 'react'
-import  "../Cita/Cita.css"
-const Listado = () => {
- [citas, setCita] = useState({
-   Mascota: 'Uma',
-      Dueño: 'Brisa',
-      Fecha: '2010-12-26',
-      Hora: '12:26',
-      Sintomas: 'Se le está cayendo el pelo'
 
-})
+import  "../Cita/Cita.css"
+const Listado = ({ citas, setCitas, eliminarCita }) => {
+ 
   /*const citas = [
     {
       Mascota: 'Uma',
@@ -39,11 +32,12 @@ const Listado = () => {
       {citas.map((cita, index) => (
         <Cita
           key={index}
-          Mascota={cita.Mascota}
-          Dueño={cita.Dueño}
-          Fecha={cita.Fecha}
-          Hora={cita.Hora}
-          Sintomas={cita.Sintomas}
+          Mascota={cita.mascota}
+          Dueño={cita.dueño}
+          Fecha={cita.fecha}
+          Hora={cita.hora}
+          Sintomas={cita.sintomas}
+              eliminarCita={() => eliminarCita(index)}
         />
       ))}
     </div>

@@ -1,26 +1,25 @@
 
-import {useSate} from "react"
-const Formulario =() =>{
+import {useState} from "react"
+const Formulario = ({ citas, setCitas }) => {
 
-    const setCita = (e) =>{
+    const CrearCita = (e) =>{
         e.preventDefault();
-         const formulario = e.target;
-        
-        formulario.Mascota.value = "";
+            const nuevaCita = {
+      mascota: e.target.Mascota.value,
+      dueño: e.target.Dueño.value,
+      fecha: e.target.Fecha.value,
+      hora: e.target.Hora.value,
+      sintomas: e.target.Sintomas.value
+    };
 
-        setCita([
-            ...citas,
-            formulario.Mascota.value,
-             formulario.Dueño.value,
-              formulario.Fecha.value.
-             formulario.Hora.value,
-             formulario.Sintomas.value,
-        ]);
+    setCitas([...citas, nuevaCita]);
+
+    e.target.reset();
 
     }
 
 return(
-<form onSubmit= {setCita}>
+<form onSubmit= {CrearCita}>
 <h3>Nombre Mascota</h3>
 <input type="text" name="Mascota" placeholder="Nombre Mascota" />
 <h3>Nombre del Dueño</h3>
@@ -31,7 +30,7 @@ return(
 <input type="time" name="Hora"/>
 <h3>Sintomas</h3>
 <textarea name="Sintomas" id=""></textarea>
-<button>agregar cita</button>
+<button type="submit">agregar cita</button>
 </form>
 );
 
