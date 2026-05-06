@@ -1,7 +1,7 @@
 
 import {useState} from "react"
 const Formulario = ({ citas, setCitas }) => {
-
+  
     const CrearCita = (e) =>{
         e.preventDefault();
             const nuevaCita = {
@@ -15,8 +15,11 @@ const Formulario = ({ citas, setCitas }) => {
     setCitas([...citas, nuevaCita]);
 
     e.target.reset();
-
+    
     }
+
+  
+
 
 return(
 <form onSubmit= {CrearCita}>
@@ -32,6 +35,7 @@ return(
 <textarea name="Sintomas" id=""></textarea>
 <button type="submit">agregar cita</button>
 </form>
+
 );
 
 

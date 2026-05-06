@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -7,12 +7,22 @@ import Listado from './Listado'
 import Formulario from './Formulario'
 import "./Formulario/Formulario.css";
 function App() {
- const [citas, setCitas] = useState([]);
-//Citas e sla variable, setCitas es la funcion que hiría en el fromulario
+
+  const [citas, setCitas] = useState(() => {
+    const saved = localStorage.getItem('citas');
+    return saved ? JSON.parse(saved) : [];
+  });
+
   const eliminarCita = (indexAEliminar) => {
-  const nuevasCitas = citas.filter((_, index) => index !== indexAEliminar);
-  setCitas(nuevasCitas);
-};
+    const nuevasCitas = citas.filter((_, index) => index !== indexAEliminar);
+    setCitas(nuevasCitas);
+  };
+  useEffect(() =>{
+  localStorage.setItem('citas', JSON.stringify(citas));
+  
+},[citas])
+//llamada sincronica:
+
   return (
     <>
       <section id="center">
